@@ -1,0 +1,236 @@
+
+nav{
+    margin-top: 20px;
+    transition: 0.3s;
+    
+}
+nav *{
+    color: white !important;
+}
+.navbar-collapse{
+    flex-grow: 0.4;
+}
+.navbar-nav a:hover{
+    color: #3030ea !important;
+}
+.navbar>.container-fluid{
+    justify-content: space-around;
+}
+.navbar-nav{
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+}
+.navbar-toggler{
+    background-color: aliceblue;
+}
+@media (max-width:991px) {
+    nav{
+        background-color: black;
+        margin-top: 0;
+    }
+}
+header{
+    color: white;
+    background-image: url('./assets/images/welcome-hero/header.jpg');
+    min-height: 720px;
+    background-position: center center;
+    margin-bottom: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header > div{
+    /* padding-top: 40vh; */
+    height: 120%;
+    background-color: rgba(27, 39, 207,0.4);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    
+}
+header button , .mainBTN{
+    outline: none;
+    border: none;
+    color: white;
+    background-color: rgba(27, 39, 207,1);
+    padding: 16px 80px;
+    border-radius: 5px;
+    font-size: 20px;
+    transition-duration: 0.5s;
+}
+header button:hover{
+    background-color: rgb(6, 16, 160);
+
+}
+
+.mainBTN{
+    margin-top: 10px;
+}
+@media (max-width:991px) {
+    header{
+        
+        height: 80vh;
+        
+    }
+    header > div{
+        
+        height: 80vh;
+        
+        
+    }
+}
+/* header end */
+/* about start */
+.about{
+    margin-bottom: 100px;
+    padding-top: 50px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.about img{
+    width: 35vw;
+    border-radius: 10px;
+}
+@media (max-width:671px) {
+    .about{
+        flex-direction: column;
+
+    }
+    .about img{
+        width: 80vw;
+    }
+    .about p{
+        padding: 10px 15px;
+        text-align: center;
+    }
+    
+}
+/* about end */
+.services{
+    background-color:#04043a;
+    color: white;
+
+    padding: 50px 5px;
+}
+.services h1{
+    padding-top: 50px;
+}
+.serv{
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    flex-wrap: wrap;
+    padding: 60px 0px;
+    padding-bottom: 90px;
+}
+.serv div{
+    text-align: center;
+    width: 400px;
+    
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    padding: 40px 60px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+    cursor: pointer;
+    transition-duration: 0.3s;
+
+}
+
+.serv div:hover {
+    color: white !important;
+    background-color: #3030ea;
+    
+}
+.services .serv div:hover {
+    color: white !important;
+    background-color: #3030ea;
+    transform: scale(1.05);
+}
+.serv div:hover * {
+    color: white !important;
+
+}
+.serv div:hover span{
+    border-color: white;
+}
+.serv div h3 {
+    font-size: 20px;
+    font-weight: normal;
+}
+.serv div span{
+    width: 50px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #3030ea;
+}
+.serv div p {
+    color: gray;
+}
+.fa-2xl{
+    font-size: 3.5em;
+}
+
+
+@media (max-width:991px) {
+    .serv div{
+        width: 400px;
+        
+    }
+    .serv{
+        flex-direction: column;
+        align-items: center;
+        gap:50px
+    }
+}
+@media (max-width:600px) {
+    .serv div{
+        width: 85vw;
+    }
+    .serv{
+        flex-direction: column;
+        align-items: center;
+        gap:50px;
+    }
+}
+
+
+footer{
+    background-color: #04043a;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+footer a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.gr{
+    display: grid;
+    gap: 10px;
+    direction: rtl;
+    width: 300px;
+}
+.gr div a{
+   display: flex;
+   gap: 10px;
+   align-items: center;
+}
+@media (max-width:600px) {
+    footer{
+        padding-right: 20px;
+    }
+}
