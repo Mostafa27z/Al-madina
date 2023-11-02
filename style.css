@@ -31,6 +31,7 @@ nav *{
     }
 }
 header{
+    transition: all 3.5s;
     color: white;
     background-image: url('./assets/images/welcome-hero/header.jpg');
     min-height: 720px;
@@ -205,6 +206,22 @@ header button:hover{
     }
 }
 
+.work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+video{
+    border-radius: 10px;
+    height: 400px;
+    width:400px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow:0px 5px 50px #04043a;
+}
 
 footer{
     background-color: #04043a;
@@ -228,6 +245,11 @@ footer a {
    display: flex;
    gap: 10px;
    align-items: center;
+}
+@media (max-width:900px) {
+    footer{
+        padding-right: 80px;
+    }
 }
 @media (max-width:600px) {
     footer{
