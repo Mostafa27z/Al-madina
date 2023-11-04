@@ -4,7 +4,7 @@ window.onscroll = function () {
     if (document.body.scrollTop > 60 && screen.width > 992){
         document.getElementById('nav').style.backgroundColor = "black";
         document.getElementById('nav').style.marginTop = 0;
-        console.log(123);
+        
     }
     else if (screen.width > 992){
         document.getElementById('nav').style.backgroundColor = "transparent";
