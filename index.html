@@ -4,7 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="./assets/css/all.min.css">
-    
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
  
     <link rel="stylesheet" href="style.css">
@@ -21,11 +22,11 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav" dir="rtl">
-              <a class="nav-link " aria-current="page" href="#">الصفحة الرئيسية</a>
-              <a class="nav-link" href="#">من نحن؟</a>
-              <a class="nav-link" href="#">أهم ما يميزنا</a>
-              <a class="nav-link" href="#">خدماتنا</a>
-              <a class="nav-link" href="#">تواصل معنا</a>
+              <a class="nav-link " aria-current="page" href="#head">الصفحة الرئيسية</a>
+              <a class="nav-link" href="#about">من نحن؟</a>
+              <a class="nav-link" href="#imp">أهم ما يميزنا</a>
+              <a class="nav-link" href="#serv">خدماتنا</a>
+              <a class="nav-link" href="#cont">تواصل معنا</a>
               
               
             </div>
@@ -48,7 +49,7 @@
       </header>
       <!-- HEAD END -->
       <!-- ABOUT START -->
-      <h1 data-aos="fade-up" class="text-center" >من نحن؟</h1>
+      <h1 data-aos="fade-up" class="text-center" id="about">من نحن؟</h1>
       <section  class="container about" dir="rtl">
         <img src="./assets/images/new-cars-model/about.jpg" alt="" data-aos="zoom-in-left" data-aos-duration="1000">
         <p data-aos="zoom-in-right" data-aos-duration="1000">شركة نقل البضائع "المدينة المنورة" هي شركة عالمية رائدة في مجال خدمات النقل والشحن. تأسست الشركة برؤية واضحة لتلبية احتياجات العملاء في مجال نقل البضائع وتوصيلها بسرعة وأمان إلى جميع محافظات مصر.
@@ -56,8 +57,10 @@
           تتميز شركة نقل البضائع "المدينة المنورة" بخبرتها الواسعة وتاريخها الممتد في صناعة النقل والشحن. تعتمد الشركة على فريق عمل محترف ومدرب تدريباً عالياً، يتمتع بالمعرفة والمهارات اللازمة لضمان تنفيذ عمليات النقل بكفاءة وفعالية.</p>
       </section>
       <!-- ABOUT END -->
+      <!-- BRANCHES START -->
+      <!-- BRANCHES END -->
       <!-- SERV START -->
-      <div class="services">
+      <div class="services" id="imp">
         <h1 class="text-center" data-aos="fade-down" data-aos-duration="1000">أهم ما يميزنا</h1>
         <section class="serv">
           <div data-aos="zoom-in-right" data-aos-duration="1000">
@@ -90,7 +93,8 @@
         </section>
       </div>
       <!-- SERV END -->
-      <h1 class="text-center pt-5 mt-5" data-aos="zoom-in-up" data-aos-duration="1000">خدماتنا   </h1>
+
+      <h1 class="text-center pt-5 mt-5" data-aos="zoom-in-up" data-aos-duration="1000" id="serv">خدماتنا   </h1>
         <section class="serv">
           <div data-aos="zoom-in-right" data-aos-duration="1000">
             <i class="fa-solid fa-truck-fast fa-2xl"></i>
@@ -121,9 +125,35 @@
           </div>
         </section>
         <section class="work"> 
-          <h1 class="text-center"> أعمالنا </h1>
+          <h1 class="text-center" data-aos="fade-up" data-aos-duration="1000"> أعمالنا </h1>
           <video src="./assets/videos/work.mp4" controls></video>
         </section>
+
+        <div class="container branches" id="cont">
+          <h1 class="text-center">
+            فروعنا
+          </h1>
+        <div class="your-class">
+          
+          <div class="text-center"><i class="fa-solid fa-map-location-dot fa-2xl"></i>
+            <br>
+            <h2>فرع نجران</h2>
+          </div>
+          <div class="text-center"><i class="fa-solid fa-map-location-dot fa-2xl"></i>
+            <br>
+            <h2>فرع خميس مشيط</h2>
+          </div>
+          <div class="text-center"><i class="fa-solid fa-map-location-dot fa-2xl"></i>
+            <br>
+            <h2>فرع جيزان</h2>
+          </div>
+          <div class="text-center"><i class="fa-solid fa-map-location-dot fa-2xl"></i>
+            <br>
+            <h2>فرع القنفدة</h2>
+          </div>
+
+        </div>
+      </div>
       <footer>
         <div class="gr">
         <div><a href="tel:+966545248193"><i class="fa-solid fa-phone fa-shake"></i> فرع جيزان</a></div>
@@ -133,7 +163,7 @@
       <div class="gr">
         <div><a href="tel:+966558323331"><i class="fa-solid fa-phone fa-shake"></i> فرع خميس مشيط</a></div>
         <div><a href="tel:+966562811874"><i class="fa-solid fa-phone fa-shake"></i> فرع نجران</a></div>
-        <div><a href="tel:+966545248193"><i class="fa-solid fa-phone fa-shake"></i> فرع جيزان</a></div>
+        <div><a href="tel:+966545248193"><i class="fa-solid fa-phone fa-shake"></i> فرع القنفدة</a></div>
       </div>
 
       </footer>
@@ -145,8 +175,50 @@
       
       <script src="./assets/js/js.bundle.min.js"></script>
       <script src="./assets/js/js.js"></script>
-      
-
-
+      <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script src="./slick-1.8.1/slick/slick.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.your-class').slick({
+            
+            dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+          });
+        });
+      </script>
 </body>
 </html>
