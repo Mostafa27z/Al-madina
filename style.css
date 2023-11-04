@@ -114,6 +114,36 @@ header button:hover{
     
 }
 /* about end */
+
+.your-class {
+    height: 250px;
+    align-items: center;
+    
+    color:#04043a ;
+    display: flex;
+    align-items: center;
+   
+}
+
+.slick-initialized .slick-slide{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.slick-slide{
+    display: flex;
+    align-items: center;
+    
+    height: 100%;
+}
+.slick-prev:before, .slick-next:before{
+    color: #04043a;
+    font-size: 35px;
+    margin: 0 10px ;
+}
+.slick-prev {
+    left: -61px;
+}
 .services{
     background-color:#04043a;
     color: white;
@@ -213,6 +243,16 @@ header button:hover{
     justify-content: center;
     gap: 50px;
     margin-bottom: 100px;
+    background-color: #04043a;
+    color: white;
+    padding: 50px 0;
+    border-top: black solid 5px;
+    border-bottom: 5px  black solid ;
+    background-image: url(./assets/images/new-cars-model/images.jpg);
+    background-position: center center;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 video{
     border-radius: 10px;
@@ -220,7 +260,8 @@ video{
     width:400px;
     border-style: solid;
     border-width: 1px;
-    box-shadow:0px 5px 50px #04043a;
+    box-shadow:0px 5px 50px #000000;
+    background-color: rgba(0, 0, 0,0.7);
 }
 @media (max-width:410px) {
     video{
